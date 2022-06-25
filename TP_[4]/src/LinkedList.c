@@ -404,20 +404,16 @@ void* ll_pop(LinkedList* this,int index)
 */
 int ll_contains(LinkedList* this, void* pElement)
 {
-    int i;
     int returnAux = -1;
     if(this != NULL){
-    	for(i = 0; i < ll_len(this); i++){
-    		if(getNode(this, i)->pElement == pElement){
-    			returnAux = 1;
-    			break;
-    		}
+    	if(ll_indexOf(this, pElement) == -1){
+    		returnAux = 0;
+    	}else{
+    		returnAux = 1;
     	}
-    	returnAux = 0;
     }
     return returnAux;
 }
-
 /** \brief  Determina si todos los elementos de la lista (this2)
             estan contenidos en la lista (this)
  *
