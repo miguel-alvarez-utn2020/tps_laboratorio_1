@@ -1,1 +1,7 @@
-Info: Nothing to build for TP_[2]
+14:45:19 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+
+14:45:20 Build Finished. 0 errors, 0 warnings. (took 755ms)
+

@@ -11,3 +11,284 @@ collect2.exe: error: ld returned 1 exit status
 13:25:45 **** Incremental Build of configuration Debug for project TP_[3] ****
 Info: Internal Builder is used for build
 gcc "-LC:\\Users\\migue\\OneDrive\\Escritorio\\TPS\\TP_[3]" -o TP_[3].exe Controller.o Passenger.o inputs.o main.o parser.o -lLinkedList 
+12:55:54 **** Rebuild of configuration Debug for project TP_[3] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o inputs.o "..\\inputs.c" 
+gcc "-LC:\\Users\\migue\\OneDrive\\Escritorio\\TPSU\\TP_[3]" -o TP_[3].exe Controller.o Passenger.o inputs.o main.o parser.o -lLinkedList 
+12:56:25 **** Rebuild of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\initializer\\initializer.o" "..\\src\\biblioteca\\initializer\\initializer.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\calc\\calc.o" "..\\src\\biblioteca\\calc\\calc.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\orders\\orders.o" "..\\src\\biblioteca\\orders\\orders.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\finds\\finds.o" "..\\src\\biblioteca\\finds\\finds.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\transforms\\transform.o" "..\\src\\biblioteca\\transforms\\transform.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\inputs\\inputs.o" "..\\src\\biblioteca\\inputs\\inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\list\\list.o" "..\\src\\biblioteca\\list\\list.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\interfaces\\interfaces.o" "..\\src\\biblioteca\\interfaces\\interfaces.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:04:42 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+In file included from ..\src\biblioteca\passagers\arrayPassagers.c:7:0:
+..\src\biblioteca\passagers\../inputs/inputs.h:12:24: fatal error: LinkedList.h: No such file or directory
+ #include "LinkedList.h"
+                        ^
+compilation terminated.
+13:04:58 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\inputs\\inputs.o" "..\\src\\biblioteca\\inputs\\inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+..\src\biblioteca\passagers\arrayPassagers.c: In function 'addPassager':
+..\src\biblioteca\passagers\arrayPassagers.c:157:5: warning: implicit declaration of function 'Passengger_inputName' [-Wimplicit-function-declaration]
+     Passengger_inputName(&newPassager);
+     ^~~~~~~~~~~~~~~~~~~~
+..\src\biblioteca\passagers\arrayPassagers.c: In function 'Passengger_inputName':
+..\src\biblioteca\passagers\arrayPassagers.c:681:4: warning: implicit declaration of function 'Passenger_setNombre' [-Wimplicit-function-declaration]
+    Passenger_setNombre(this, name);
+    ^~~~~~~~~~~~~~~~~~~
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+src\biblioteca\passagers\arrayPassagers.o: In function `Passengger_inputName':
+C:\Users\migue\OneDrive\Escritorio\TPSU\TP_[2]\Debug/../src/biblioteca/passagers/arrayPassagers.c:681: undefined reference to `Passenger_setNombre'
+collect2.exe: error: ld returned 1 exit status
+13:05:58 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+..\src\biblioteca\passagers\arrayPassagers.c: In function 'addPassager':
+..\src\biblioteca\passagers\arrayPassagers.c:157:5: warning: implicit declaration of function 'Passengger_inputName' [-Wimplicit-function-declaration]
+     Passengger_inputName(&newPassager);
+     ^~~~~~~~~~~~~~~~~~~~
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:08:52 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_[2].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:09:45 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:12:09 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+..\src\biblioteca\passagers\arrayPassagers.c: In function 'addPassager':
+..\src\biblioteca\passagers\arrayPassagers.c:168:5: warning: implicit declaration of function 'Passengger_inputPrice' [-Wimplicit-function-declaration]
+     Passengger_inputPrice(&newPassager);
+     ^~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:15:20 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+..\src\biblioteca\passagers\arrayPassagers.c: In function 'addPassager':
+..\src\biblioteca\passagers\arrayPassagers.c:155:9: warning: unused variable 'maxCharacterInputName' [-Wunused-variable]
+     int maxCharacterInputName = sizeof(newPassager.name);
+         ^~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+Info: Nothing to build for TP_[2]
+13:18:38 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+..\src\biblioteca\passagers\arrayPassagers.c: In function 'Passengger_inputEstadoVuelo':
+..\src\biblioteca\passagers\arrayPassagers.c:751:3: warning: implicit declaration of function 'Passenger_menuEstadoVuelo' [-Wimplicit-function-declaration]
+   Passenger_menuEstadoVuelo();
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\biblioteca\passagers\arrayPassagers.c: At top level:
+..\src\biblioteca\passagers\arrayPassagers.c:766:6: warning: conflicting types for 'Passenger_menuEstadoVuelo'
+ void Passenger_menuEstadoVuelo(){
+      ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\biblioteca\passagers\arrayPassagers.c:751:3: note: previous implicit declaration of 'Passenger_menuEstadoVuelo' was here
+   Passenger_menuEstadoVuelo();
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:19:16 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_[2].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:19:19 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:21:28 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:23:19 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:30:08 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:31:17 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:49:50 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:51:51 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:53:05 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:54:48 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:55:53 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:57:09 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:58:15 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+13:59:00 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:01:21 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:01:52 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+Info: Nothing to build for TP_[2]
+14:03:53 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:04:05 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_[2].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:04:23 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:05:27 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:06:11 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:07:24 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:12:05 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+..\src\biblioteca\passagers\arrayPassagers.c: In function 'viewPassagers':
+..\src\biblioteca\passagers\arrayPassagers.c:407:20: warning: too many arguments for format [-Wformat-extra-args]
+             printf("%d %s %s %.2f %s ",
+                    ^~~~~~~~~~~~~~~~~~~
+..\src\biblioteca\passagers\arrayPassagers.c:402:9: warning: unused variable 'header' [-Wunused-variable]
+     int header = 1;
+         ^~~~~~
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:12:29 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+..\src\biblioteca\passagers\arrayPassagers.c: In function 'viewPassagers':
+..\src\biblioteca\passagers\arrayPassagers.c:402:9: warning: unused variable 'header' [-Wunused-variable]
+     int header = 1;
+         ^~~~~~
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:12:49 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:14:30 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:15:38 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:25:34 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+..\src\biblioteca\passagers\arrayPassagers.c: In function 'editPassager':
+..\src\biblioteca\passagers\arrayPassagers.c:207:9: warning: unused variable 'maxCharacterInputLastName' [-Wunused-variable]
+     int maxCharacterInputLastName = sizeof(passager.lastName);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\biblioteca\passagers\arrayPassagers.c:206:9: warning: unused variable 'maxCharacterInputName' [-Wunused-variable]
+     int maxCharacterInputName = sizeof(passager.name);
+         ^~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:28:27 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+..\src\biblioteca\passagers\arrayPassagers.c: In function 'addPassager':
+..\src\biblioteca\passagers\arrayPassagers.c:154:9: warning: unused variable 'processOk' [-Wunused-variable]
+     int processOk = 1;
+         ^~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:33:20 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+..\src\biblioteca\passagers\arrayPassagers.c: In function 'viewPassagers':
+..\src\biblioteca\passagers\arrayPassagers.c:332:107: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+             printf("ID: %d | Nombre: %s | Apellido: %s | Precio: %.2f | Codigo Vuelo: %s | Estado Vuelo: %d | Tipo Pasajero: %d ",
+                                                                                                           ^
+..\src\biblioteca\passagers\arrayPassagers.c:332:127: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+             printf("ID: %d | Nombre: %s | Apellido: %s | Precio: %.2f | Codigo Vuelo: %s | Estado Vuelo: %d | Tipo Pasajero: %d ",
+                                                                                                                               ^
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:34:42 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:35:58 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:38:02 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:38:50 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_[2].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:38:54 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+14:45:19 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
+gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
