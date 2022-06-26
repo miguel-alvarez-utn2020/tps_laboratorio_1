@@ -292,3 +292,26 @@ gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\biblioteca\\passagers\\arrayPassagers.o" "..\\src\\biblioteca\\passagers\\arrayPassagers.c" 
 gcc -o TP_[2].exe "src\\TP_2.o" "src\\biblioteca\\calc\\calc.o" "src\\biblioteca\\finds\\finds.o" "src\\biblioteca\\initializer\\initializer.o" "src\\biblioteca\\inputs\\inputs.o" "src\\biblioteca\\interfaces\\interfaces.o" "src\\biblioteca\\list\\list.o" "src\\biblioteca\\orders\\orders.o" "src\\biblioteca\\passagers\\arrayPassagers.o" "src\\biblioteca\\transforms\\transform.o" 
+Info: Nothing to build for TP_[3]
+14:58:07 **** Incremental Build of configuration Debug for project TP_[3] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Passenger.o "..\\Passenger.c" 
+gcc "-LC:\\Users\\migue\\OneDrive\\Escritorio\\TPSU\\TP_[3]" -o TP_[3].exe Controller.o Passenger.o inputs.o main.o parser.o -lLinkedList 
+14:58:29 **** Incremental Build of configuration Debug for project TP_[3] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\migue\\OneDrive\\Escritorio\\TPSU\\TP_[3]" -o TP_[3].exe Controller.o Passenger.o inputs.o main.o parser.o -lLinkedList 
+14:59:16 **** Incremental Build of configuration Debug for project TP_[3] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\migue\\OneDrive\\Escritorio\\TPSU\\TP_[3]" -o TP_[3].exe Controller.o Passenger.o inputs.o main.o parser.o -lLinkedList 
+14:59:34 **** Incremental Build of configuration Debug for project TP_[3] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\migue\\OneDrive\\Escritorio\\TPSU\\TP_[3]" -o TP_[3].exe Controller.o Passenger.o inputs.o main.o parser.o -lLinkedList 
+15:00:02 **** Incremental Build of configuration Debug for project TP_[3] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\migue\\OneDrive\\Escritorio\\TPSU\\TP_[3]" -o TP_[3].exe Controller.o Passenger.o inputs.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_[3]
